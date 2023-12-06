@@ -2,6 +2,7 @@ CREATE TABLE autori(
     id INT AUTO_INCREMENT,
     nome VARCHAR(255),
     cognome VARCHAR(255),
+    nazione CHAR(2),
     PRIMARY KEY(id)
 );
 
