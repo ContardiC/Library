@@ -1,3 +1,4 @@
+// tabella autori
 CREATE TABLE autori(
     id INT AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
