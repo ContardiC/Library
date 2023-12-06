@@ -1,7 +1,4 @@
 # Library
-An online system to manage the loan of books in PHP, MySQL, HTML, CSS, Javascript
-
-# Online Loan Management System
 
 Questo progetto è un sistema online per gestire il prestito di libri. È stato sviluppato utilizzando PHP, MySQL, HTML, CSS e JavaScript.
 
