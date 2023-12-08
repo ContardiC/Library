@@ -16,7 +16,7 @@ CREATE TABLE editori(
 
 CREATE TABLE generi(
     id INT AUTO_INCREMENT,
-    nome VARCHAR(60) NOT NULL,
+    genere VARCHAR(60) NOT NULL,
     PRIMARY KEY(id)
 );
 
