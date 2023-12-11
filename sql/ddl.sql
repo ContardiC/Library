@@ -38,4 +38,5 @@ CREATE TABLE utenti(
     cognome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(64) NOT NULL,
+    PRIMARY KEY(id)
 );
