@@ -3,7 +3,7 @@ include '../includes/header.php';
 ?>
 <div class="container ">
     <main class="form-signin w-100 m-auto">
-        <form method="post" action="">
+        <form method="post" action="../src/signin.php">
             <img class="mb-4" src="./img/box-arrow-in-right.svg" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Login</h1>
 
