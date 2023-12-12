@@ -2,7 +2,7 @@
 include '../includes/sessions.php';
 include '../includes/header.php';
 include '../config/database-connection.php';
-if(isset($_SESSION['logged']) && $_SESSION['logged'] === TRUE){
+if($logged_in){
     header("Location : index.php");
     exit;
 }
@@ -35,6 +35,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             </div>
             <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
         </form>
+        <h1 class="h3 mb-3 fw-normal">Non hai un account? <a href="register.php">Registrati</a></h1>
     </main>
 </div>
 <?php

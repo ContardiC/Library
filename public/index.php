@@ -1,11 +1,8 @@
 <?php
 include '../includes/sessions.php';
+require_login($logged_in);
 include '../includes/header.php';
-if(isset($_SESSION['logged']) && $_SESSION['logged'] === TRUE){
-    include '../includes/navbar.php';
-}else{
-    header("Location: register.php");
-}
+include '../includes/navbar.php';
 include '../includes/footer.php';
 ?>
 

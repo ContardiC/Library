@@ -29,6 +29,7 @@ include '../includes/header.php';
 
         <button type="submit" class="btn btn-primary">Registrati</button>
     </form>
+    <h1 class="h3 mb-3 fw-normal">Hai già un account? <a href="login.php">Accedi</a></h1>
 </div>
 <?php
 include '../includes/footer.php';
