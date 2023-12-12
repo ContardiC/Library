@@ -18,11 +18,6 @@ include '../includes/header.php';
             <button class="btn btn-primary w-100 py-2" type="submit">Login</button>
         </form>
     </main>
-
-
-
-
-
 </div>
 <?php
 include '../includes/footer.php';
