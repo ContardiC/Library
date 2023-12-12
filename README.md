@@ -13,6 +13,7 @@ Questo progetto è un sistema online per gestire il prestito di libri. È stato 
 - Visualizzazione di tutti i libri disponibili
 - Visualizzazione di tutti i prestiti attivi
 - Visualizzazione di tutti i clienti registrati
+- Invio email ai clienti registrati
 
 ## Requisiti
 
