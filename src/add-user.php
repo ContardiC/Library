@@ -24,7 +24,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "Errore " . $conn->error;
         }
     }else{
-        //TODO: gestire utente già presente
+        ?>
+        <div class="container">
+            Utente già registrato
+        </div>
+        <?php
     }
 
   
