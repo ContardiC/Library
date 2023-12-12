@@ -10,16 +10,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = md5($_POST['password']);
 
     // echo "$nome $cognome $email $password";
-    // TODO: controllare se l'utente è già registrato 
+    $sql = "SELECT email FROM utenti WHERE email LIKE '$email'";
 
-    $sql = "INSERT INTO utenti(nome, cognome, email, password)
-    VALUES('$nome','$cognome','$email','$password')";
-
-    if ($conn->query($sql) === TRUE) {
-        header("Location: ../public/login.php");
-        exit;
-    } else {
-        echo "Errore " . $conn->error;
+    $res = $conn->query($sql);
+    if($res->num_rows == 0){
+        $sql = "INSERT INTO utenti(nome, cognome, email, password)
+        VALUES('$nome','$cognome','$email','$password')";
+    
+        if ($conn->query($sql) === TRUE) {
+            header("Location: ../public/login.php");
+            exit;
+        } else {
+            echo "Errore " . $conn->error;
+        }
+    }else{
+        //TODO: gestire utente già presente
     }
+
+  
     $conn->close();
 }
