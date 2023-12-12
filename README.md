@@ -6,6 +6,8 @@ Questo progetto è un sistema online per gestire il prestito di libri. È stato 
 
 - Registrazione e accesso degli utenti
 - Aggiunta, modifica ed eliminazione di libri
+- Aggiunta, modifica ed eliminazione di autori
+- Aggiunta, modifica ed eliminazione di case editrici
 - Aggiunta, modifica ed eliminazione di clienti
 - Prestito e restituzione di libri
 - Visualizzazione di tutti i libri disponibili
