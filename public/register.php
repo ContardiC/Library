@@ -1,5 +1,33 @@
 <?php
 include '../includes/header.php';
+include '../config/database-connection.php';
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    //TODO: sanificare le stringhe
+
+    $nome = ucfirst(strtolower($_POST['nome']));
+    $cognome = ucfirst(strtolower($_POST['cognome']));
+    $email = strtolower($_POST['email']);
+    $password = md5($_POST['password']);
+
+    $sql = "SELECT email FROM utenti WHERE email LIKE '$email'";
+
+    $res = $conn->query($sql);
+    if($res->num_rows == 0) {
+        $sql = "INSERT INTO utenti(nome, cognome, email, password)
+        VALUES('$nome','$cognome','$email','$password')";
+
+        if ($conn->query($sql) === TRUE) {
+            header("Location: login.php");
+            exit;
+        } else {
+            echo "Errore " . $conn->error;
+        }
+    }else{
+        header("Location: login.php");
+        exit;
+    }
+}
 ?>
 <div class="container">
     <div class="px-4 py-5 my-5 text-center">
@@ -9,7 +37,7 @@ include '../includes/header.php';
             <p class="lead mb-4">Registrati e accedi per prenotare i tuoi libri </p>
         </div>
     </div>
-    <form method="post" action="../src/add-user.php">
+    <form method="POST" action="register.php">
         <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
             <input type="text" class="form-control" id="nome" name="nome" required>
