@@ -46,5 +46,8 @@ CREATE TABLE prestiti(
     id_utente int,
     id_libro int,
     data_prestito DATETIME DEFAULT CURRENT_TIMESTAMP,
-    data_consegna DATETIME DEFAULT NULL
+    data_consegna DATETIME DEFAULT NULL,
+    PRIMARY KEY(id),
+    FOREIGN KEY(id_utente) REFERENCES utenti(id),
+    FOREIGN KEY(id_libro) REFERENCES libri(id)
 );
