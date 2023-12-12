@@ -22,7 +22,7 @@ Questo progetto è un sistema online per gestire il prestito di libri. È stato 
 
 1. Clonare il repository
 2. Importare il file **`database.sql`** in MySQL
-3. Modificare le credenziali del database nel file **`config.php`**
+3. Modificare le credenziali del database nel file  **`database-connection.php`** 
 4. Avviare il server web
 
 ## Utilizzo
