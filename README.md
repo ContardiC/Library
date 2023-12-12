@@ -34,6 +34,11 @@ Questo progetto è un sistema online per gestire il prestito di libri. È stato 
 4. Prendere in prestito un libro
 5. Restituire un libro in prestito
 
+### Parte admin
+1. Aggiungere/modificare/rimuovere un libro
+2. Aggiungere/modificare/rimuovere un autore
+3. Aggiungere/modificare/rimuovere una casa editrice
+4. Inviare un'email ad un utente
 
 ## Contribuire
 
