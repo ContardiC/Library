@@ -31,6 +31,5 @@ include '../includes/header.php';
     </form>
 </div>
 <?php
-require_once '../includes/footer.php';
-//TODO: cambiare in include se uso componenti bootstrap.js
+include '../includes/footer.php';
 ?>

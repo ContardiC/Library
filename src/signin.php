@@ -13,11 +13,9 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     if($res->num_rows>0){
         $_SESSION['logged'] = TRUE;
         $_SESSION['email'] = $email;
+        header("Location: ../public/index.php");
     }else{
-        // TODO: gestire il redirect alla registrazione 
+        
     }
 }
-
-
-
 ?>

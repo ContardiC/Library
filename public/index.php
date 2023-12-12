@@ -2,10 +2,11 @@
 session_start();
 include '../includes/header.php';
 if(isset($_SESSION['logged']) && $_SESSION['logged'] === TRUE){
-    echo "ok sei loggato";
+    include '../includes/navbar.php';
 }else{
     echo "Tu non puoi passare - Cit. Gandalf";
 }
+include '../includes/footer.php';
 ?>
 
 
