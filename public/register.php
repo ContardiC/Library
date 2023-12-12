@@ -18,12 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         VALUES('$nome','$cognome','$email','$password')";
 
         if ($conn->query($sql) === TRUE) {
+            // TODO: gestire utente della corretta registrazione 
             header("Location: login.php");
             exit;
         } else {
             echo "Errore " . $conn->error;
         }
     }else{
+        // TODO: gestire utente del reindirizzamento al login in quanto ha già l'account
         header("Location: login.php");
         exit;
     }
