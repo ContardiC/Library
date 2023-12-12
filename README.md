@@ -27,10 +27,13 @@ Questo progetto è un sistema online per gestire il prestito di libri. È stato 
 
 ## Utilizzo
 
-1. Accedere al sistema
-2. Aggiungere i libri e i clienti
-3. Effettuare il prestito dei libri ai clienti
-4. Restituire i libri
+### Parte utente
+1. Registrarsi al sistema
+2. Accedere al sistema
+3. Visualizzare i libri che si hanno in prestito
+4. Prendere in prestito un libro
+5. Restituire un libro in prestito
+
 
 ## Contribuire
 
