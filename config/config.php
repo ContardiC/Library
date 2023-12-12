@@ -18,5 +18,4 @@ try{
     throw new PDOException($e->getMessage(), $e->getCode());
 }
 // TODO:   Impostazioni per l'upload dei file
-// TODO:   refactoring con POSTBACK registrazione e login
 ?>
