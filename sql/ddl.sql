@@ -1,4 +1,4 @@
-// tabella autori
+
 CREATE TABLE autori(
     id INT AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
@@ -39,4 +39,12 @@ CREATE TABLE utenti(
     email VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(64) NOT NULL,
     PRIMARY KEY(id)
+);
+
+CREATE TABLE prestiti(
+    id int AUTO_INCREMENT,
+    id_utente int,
+    id_libro int,
+    data_prestito DATETIME DEFAULT CURRENT_TIMESTAMP,
+    data_consegna DATETIME DEFAULT NULL
 );
