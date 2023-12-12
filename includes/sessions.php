@@ -14,7 +14,12 @@ function login($email){
     $_SESSION['logged_in'] = true;
     $_SESSION['email'] = $email;
 }
-function logout(){    // TODO: completare con i cookie di sessione
+function logout(){    
+    $_SESSION =[];      // elimino contenuto dell'array
+    $params = session_get_cookie_params(); // leggo i parametri del cookie di sessione
+    setcookie('PHPSESSID','',time()-3600, $params['path'],$params['domain'],$params['secure'],$params['httponly']);
+    session_destroy();
+
 
 }
 
