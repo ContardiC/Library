@@ -1,5 +1,6 @@
 <?php
 include '../includes/sessions.php';
+include '../src/functions.php';
 include '../includes/header.php';
 include '../config/database-connection.php';
 if($logged_in){
