@@ -12,6 +12,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     $sql = "SELECT email, password FROM utenti WHERE email LIKE '$email' AND password LIKE '$password'";
     $res = $conn->query($sql);
+    
     if($res->num_rows>0){
         login($email);
         header("Location: index.php");
